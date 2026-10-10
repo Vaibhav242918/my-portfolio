@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#020617">
+  <meta name="description" content="Vaibhav Waghole — Data Science student and AI/ML developer building intelligent applications, agentic AI systems, and data-driven products.">
+  <title>Vaibhav Waghole | Data Science & AI Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Linking your beautiful custom CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="selection:bg-violet-500 selection:text-white">
+  <!-- Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 border-b border-cyan-400/10 bg-slate-950/75 backdrop-blur-xl">
+    <nav class="container-width flex h-[72px] items-center justify-between" aria-label="Main navigation">
+      <a href="#home" class="flex items-center gap-3" aria-label="Vaibhav Waghole home">
+        <span class="grid h-10 w-10 place-items-center rounded-xl border border-cyan-300/20 bg-cyan-300/10 text-cyan-300"><i class="fa-solid fa-terminal"></i></span>
+        <span>
+          <span class="block text-sm font-extrabold tracking-[.12em]">VAIBHAV<span class="rgb-text">.AI</span></span>
+          <span class="mono block text-[10px] text-slate-400">DATA SCIENCE / AI</span>
+        </span>
+      </a>
+
+      <div class="desktop-nav flex items-center gap-6">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#education">Education</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#journey">Journey</a>
+        <a class="btn btn-secondary !px-4 !py-2" href="#contact">Let's Connect <i class="fa-solid fa-arrow-up-right-from-square text-cyan-300"></i></a>
+      </div>
+      <button id="menuButton" class="mobile-menu rounded-lg border border-slate-700 px-3 py-2 text-slate-200" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+    <div id="mobileLinks" class="mobile-links container-width flex-col gap-4 pb-5">
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#education">Education</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#journey">Journey</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="relative flex min-h-screen items-center overflow-hidden pb-16 pt-28">
+      <div class="hero-orb" style="top:15%;left:10%;"></div>
+      <div class="container-width hero-grid relative z-10">
+        <div class="hero-copy reveal">
+          <div class="eyebrow mb-7"><span class="status-dot"></span> MACHINE LEARNING ENGINEER INTERN · YUVaintern</div>
+          <p class="mono mb-4 text-xs uppercase tracking-[.24em] text-cyan-200/80">Building intelligent systems</p>
+          <h1 class="hero-title mb-6">Hi, I'm<br><span class="rgb-text">Vaibhav Waghole</span></h1>
+          <p class="mono mb-5 text-sm text-cyan-100/80 sm:text-base">B.Sc. Data Science Student & AI/ML Developer</p>
+          <p class="mb-8 max-w-xl text-sm leading-7 text-slate-300 sm:text-base">
+            I build AI-powered applications, agentic workflows, machine learning solutions, and data-driven products that turn ideas into practical tools.
+          </p>
+          <div class="hero-buttons mb-8 flex flex-wrap gap-3">
+            <a href="#projects" class="btn btn-primary">Explore Projects <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="assets/Vaibhav_Waghole_ATS_Resume_1_Page_updated.pdf" class="btn btn-secondary" download><i class="fa-solid fa-download text-cyan-300"></i> Download Resume</a>
+          </div>
+          <div class="hero-contact flex flex-wrap gap-x-5 gap-y-3 text-xs text-slate-400">
+            <span><i class="fa-solid fa-location-dot mr-2 text-cyan-300"></i>Chhatrapati Sambhajinagar, India</span>
+            <a href="mailto:vaibhavwaghole2429@gmail.com" class="hover:text-cyan-200"><i class="fa-solid fa-envelope mr-2 text-cyan-300"></i>Email me</a>
+            <a href="https://www.linkedin.com/in/vaibhav-waghole-0b2180341/" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-200"><i class="fa-brands fa-linkedin mr-2 text-cyan-300"></i>LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="hero-visual glass reveal" aria-label="Abstract AI and data science illustration">
+          <div class="orbit"></div>
+          <div class="planet"><i class="fa-solid fa-brain"></i></div>
+          <div class="visual-chip chip-one"><i class="fa-solid fa-code"></i> AI SYSTEMS</div>
+          <div class="visual-chip chip-two"><i class="fa-solid fa-chart-line"></i> DATA INSIGHTS</div>
+          <div class="visual-chip chip-three"><i class="fa-solid fa-database"></i> ML PIPELINES</div>
+          <div class="visual-chip chip-four"><i class="fa-solid fa-wand-magic-sparkles"></i> AGENTIC AI</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="pb-10">
+      <div class="container-width grid grid-cols-2 gap-4 md:grid-cols-4">
+        <div class="glass stat-card reveal"><p class="mono text-xs text-slate-400">EDUCATION</p><p class="stat-number rgb-text mt-2">B.Sc.</p><p class="mt-1 text-xs text-slate-400">Data Science</p></div>
+        <div class="glass stat-card reveal"><p class="mono text-xs text-slate-400">CGPA</p><p class="stat-number rgb-text mt-2">7.90</p><p class="mt-1 text-xs text-slate-400">Current academic score</p></div>
+        <div class="glass stat-card reveal"><p class="mono text-xs text-slate-400">FEATURED BUILDS</p><p class="stat-number rgb-text mt-2">02+</p><p class="mt-1 text-xs text-slate-400">AI and data projects</p></div>
+        <div class="glass stat-card reveal"><p class="mono text-xs text-slate-400">FOCUS</p><p class="stat-number rgb-text mt-2">AI/ML</p><p class="mt-1 text-xs text-slate-400">Data to intelligence</p></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container-width">
+        <div class="section-heading reveal">
+          <span class="eyebrow">01 / ABOUT ME</span>
+          <h2>Curious mind. <span class="rgb-text">Builder mindset.</span></h2>
+          <p>I'm a Data Science student interested in intelligent systems, practical machine learning, and software that solves real problems.</p>
+        </div>
+        <div class="glass grid gap-8 p-7 md:grid-cols-[1.4fr_.6fr] md:p-10 reveal">
+          <div>
+            <h3 class="mb-4 text-xl font-bold">Turning data into useful products</h3>
+            <p class="mb-4 text-sm leading-7 text-slate-300">
+              My work combines Python development, data analytics, machine learning, and AI-assisted workflows. I enjoy taking a concept from planning through implementation, testing, and documentation.
+            </p>
+            <p class="text-sm leading-7 text-slate-300">
+              I'm currently pursuing a B.Sc. in Data Science and developing projects that strengthen my understanding of intelligent applications, data isolation, predictive analytics, and desktop AI.
+            </p>
+          </div>
+          <div class="rounded-2xl border border-cyan-300/10 bg-slate-950/50 p-5">
+            <p class="mono mb-4 text-xs uppercase tracking-widest text-cyan-200">Career interests</p>
+            <div class="space-y-3 text-sm text-slate-300">
+              <p><i class="fa-solid fa-chart-simple mr-3 w-4 text-cyan-300"></i>Data Analyst</p>
+              <p><i class="fa-solid fa-brain mr-3 w-4 text-violet-300"></i>Data Scientist</p>
+              <p><i class="fa-solid fa-robot mr-3 w-4 text-sky-300"></i>AI/ML Engineer</p>
+            </div>
+            <div class="mt-6 border-t border-slate-800 pt-5">
+              <p class="mono mb-2 text-xs uppercase tracking-widest text-slate-500">Languages</p>
+              <p class="text-sm text-slate-300">English · Hindi · Marathi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section border-y border-slate-800/60 bg-slate-950/25">
+      <div class="container-width">
+        <div class="section-heading reveal">
+          <span class="eyebrow">02 / EDUCATION</span>
+          <h2>Learning the <span class="rgb-text">foundations</span></h2>
+          <p>Building a strong base in data, statistics, programming, and artificial intelligence.</p>
+        </div>
+        <div class="glass flex flex-col gap-6 p-7 md:flex-row md:items-center md:p-9 reveal">
+          <div class="icon-box !h-16 !w-16 text-2xl"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="flex-1">
+            <p class="mono mb-2 text-xs text-cyan-200">2024 — 2027 · EXPECTED</p>
+            <h3 class="text-xl font-bold">B.Sc. in Data Science</h3>
+            <p class="mt-2 text-sm text-slate-300">Deogiri College, Chhatrapati Sambhajinagar</p>
+            <p class="mt-1 text-sm text-slate-400">Dr. Babasaheb Ambedkar Marathwada University</p>
+          </div>
+          <div class="rounded-xl border border-cyan-300/15 bg-cyan-300/5 px-5 py-4">
+            <p class="mono text-xs text-slate-400">CURRENT CGPA</p><p class="mt-1 text-2xl font-extrabold text-cyan-200">7.90</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests -->
+    <section id="interests" class="section">
+      <div class="container-width">
+        <div class="section-heading reveal">
+          <span class="eyebrow">03 / INTERESTS</span>
+          <h2>What I like to <span class="rgb-text">explore</span></h2>
+          <p>Core domains that shape the projects I build and the skills I keep developing.</p>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="glass interest-card reveal"><div class="icon-box"><i class="fa-solid fa-brain"></i></div><h3>Artificial Intelligence</h3><p class="text-sm leading-6 text-slate-400">LLMs, agentic systems, and AI-powered tools.</p></div>
+          <div class="glass interest-card reveal"><div class="icon-box"><i class="fa-solid fa-chart-line"></i></div><h3>Machine Learning</h3><p class="text-sm leading-6 text-slate-400">Predictive models, evaluation, and analytics.</p></div>
+          <div class="glass interest-card reveal"><div class="icon-box"><i class="fa-solid fa-chart-pie"></i></div><h3>Data Analytics</h3><p class="text-sm leading-6 text-slate-400">Exploration, visualization, and insights.</p></div>
+          <div class="glass interest-card reveal"><div class="icon-box"><i class="fa-solid fa-database"></i></div><h3>Data Engineering</h3><p class="text-sm leading-6 text-slate-400">Databases, pipelines, and reliable systems.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section border-y border-slate-800/60 bg-slate-950/25">
+      <div class="container-width">
+        <div class="section-heading reveal">
+          <span class="eyebrow">04 / TECH STACK</span>
+          <h2>Tools I work <span class="rgb-text">with</span></h2>
+          <p>A practical toolkit spanning programming, analytics, machine learning, AI workflows, and application development.</p>
+        </div>
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <article class="glass skill-card reveal"><div class="icon-box"><i class="fa-solid fa-code"></i></div><h3>Programming</h3><p>Python, SQL, R, Java</p><div class="mt-4 flex flex-wrap gap-2"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Java</span></div></article>
+          <article class="glass skill-card reveal"><div class="icon-box"><i class="fa-solid fa-chart-column"></i></div><h3>Data Analysis & Visualization</h3><p>Pandas, NumPy, Excel, Matplotlib, Seaborn, Plotly, Power BI, Tableau</p><div class="mt-4 flex flex-wrap gap-2"><span class="tag">Pandas</span><span class="tag">Plotly</span><span class="tag">Power BI</span></div></article>
+          <article class="glass skill-card reveal"><div class="icon-box"><i class="fa-solid fa-chart-line"></i></div><h3>Machine Learning</h3><p>Regression, classification, Random Forest, clustering, PCA, anomaly detection, model evaluation, and feature engineering.</p><div class="mt-4 flex flex-wrap gap-2"><span class="tag">Scikit-learn</span><span class="tag">PCA</span><span class="tag">SHAP</span></div></article>
+          <article class="glass skill-card reveal"><div class="icon-box"><i class="fa-solid fa-robot"></i></div><h3>AI & Agentic Systems</h3><p>Gemini / Google GenAI SDK, LLM reasoning, prompt engineering, tool calling, multimodal workflows, speech recognition, and text-to-speech.</p><div class="mt-4 flex flex-wrap gap-2"><span class="tag">LLMs</span><span class="tag">Tool Calling</span><span class="tag">Edge-TTS</span></div></article>
+          <article class="glass skill-card reveal"><div class="icon-box"><i class="fa-solid fa-database"></i></div><h3>Databases & Backend</h3><p>SQLite, relational schema design, parameterized queries, data validation, audit logging, ChromaDB, and semantic search concepts.</p><div class="mt-4 flex flex-wrap gap-2"><span class="tag">SQLite</span><span class="tag">RDBMS</span><span class="tag">ChromaDB</span></div></article>
+          <article class="glass skill-card reveal"><div class="icon-box"><i class="fa-solid fa-rocket"></i></div><h3>Development & Tools</h3><p>Git, GitHub, VS Code, Jupyter, Python virtual environments, Streamlit, PyQt5, HTML/CSS, and API integration.</p><div class="mt-4 flex flex-wrap gap-2"><span class="tag">GitHub</span><span class="tag">Streamlit</span><span class="tag">PyQt5</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container-width">
+        <div class="section-heading reveal">
+          <span class="eyebrow">05 / SELECTED WORK</span>
+          <h2>Projects built with <span class="rgb-text">purpose</span></h2>
+          <p>Selected projects focused on applied AI, financial intelligence, and data-driven workflows.</p>
+        </div>
+        <div class="grid gap-7 lg:grid-cols-2">
+          <!-- FinAgent Enterprise -->
+          <article class="glass project-card reveal">
+            <div class="project-cover finagent-cover">
+              <div class="cover-grid"></div>
+              <div class="cover-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="cover-copy">
+                <span>TELEMETRY DASHBOARD</span>
+                <strong>FinAgent <em>AI</em></strong>
+                <small>v2.0.1</small>
+              </div>
+              <div class="cover-mini-chart">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="mb-3 flex flex-wrap gap-2"><span class="tag">FINTECH</span><span class="tag">MACHINE LEARNING</span><span class="tag">STREAMLIT</span></div>
+              <h3 class="mb-2 text-2xl font-extrabold">FinAgent Enterprise</h3>
+              <p class="mono mb-4 text-xs leading-6 text-cyan-200">Autonomous Multi-Tenant Financial Telemetry & AI Gateway</p>
+              <ul class="mb-6">
+                <li>Financial dashboard for expense tracking, burn-rate forecasting, financial health scoring, and goal planning.</li>
+                <li>SQLite data isolation with parameterized queries, credential hashing, input validation, and account recovery workflows.</li>
+                <li>Interactive financial visualizations built with Plotly and predictive analytics using Scikit-learn.</li>
+              </ul>
+              <div class="mb-6 flex flex-wrap gap-2"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span><span class="tag">Plotly</span><span class="tag">SQLite</span></div>
+              <div class="mt-auto flex flex-wrap gap-3 border-t border-slate-800 pt-5">
+                <a class="btn btn-secondary" href="https://github.com/Vaibhav242918" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub Profile</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Neptune AI -->
+          <article class="glass project-card reveal">
+            <div class="project-cover neptune-cover">
+              <div class="cover-grid"></div>
+              <div class="neptune-orbit"></div>
+              <div class="neptune-orbit orbit-two"></div>
+              <div class="cover-icon"><i class="fa-solid fa-robot"></i></div>
+              <div class="cover-copy">
+                <span>AUTONOMOUS AGENT</span>
+                <strong>Neptune <em>OS</em></strong>
+                <small>Build 884</small>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="mb-3 flex flex-wrap gap-2"><span class="tag">DESKTOP AI</span><span class="tag">AGENTIC WORKFLOWS</span><span class="tag">PYTHON</span></div>
+              <h3 class="mb-2 text-2xl font-extrabold">Neptune AI</h3>
+              <p class="mono mb-4 text-xs leading-6 text-cyan-200">Intelligent Desktop Assistant · Agentic AI + Data Science</p>
+              <ul class="mb-6">
+                <li>Windows desktop assistant designed for conversational commands, voice interaction, multimodal inputs, and data science workflows.</li>
+                <li>AI tool workflows for code and dataset analysis, exploratory data analysis, model evaluation, and visualization.</li>
+                <li>PyQt5 interface with background tasks and local persistence components.</li>
+              </ul>
+              <div class="mb-6 flex flex-wrap gap-2"><span class="tag">Python</span><span class="tag">Gemini API</span><span class="tag">PyQt5</span><span class="tag">SQLite</span><span class="tag">ChromaDB</span></div>
+              <div class="mt-auto flex flex-wrap gap-3 border-t border-slate-800 pt-5">
+                <a class="btn btn-secondary" href="https://github.com/Vaibhav242918/neptune-ai" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> View Repository</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="mt-6 text-center text-xs leading-6 text-slate-500">Project descriptions reflect the current development scope. Add live demo links when a public deployment is available.</p>
+      </div>
+    </section>
+
+    <!-- Experience and certificates -->
+    <section id="journey" class="section border-y border-slate-800/60 bg-slate-950/25">
+      <div class="container-width">
+        <div class="section-heading reveal">
+          <span class="eyebrow">06 / JOURNEY</span>
+          <h2>Learning by <span class="rgb-text">building</span></h2>
+          <p>Education, internship experience, projects, and continued technical learning.</p>
+        </div>
+        <div class="grid gap-8 md:grid-cols-2">
+          <div class="glass p-7 reveal">
+            <h3 class="mb-7 text-xl font-bold"><i class="fa-solid fa-route mr-3 text-cyan-300"></i>Experience & milestones</h3>
+            <div class="timeline-line">
+              <div class="timeline-item">
+                <p class="mono mb-2 text-xs text-cyan-200">SEP 2026 — NOV 2026</p>
+                <h4 class="font-bold">Machine Learning Engineer Intern</h4>
+                <p class="mt-1 text-sm text-slate-400">yuvaIntern · Remote internship</p>
+                <p class="mt-2 text-sm leading-6 text-slate-300">Working through practical machine learning and data science tasks.</p>
+              </div>
+              <div class="timeline-item">
+                <p class="mono mb-2 text-xs text-cyan-200">2026</p>
+                <h4 class="font-bold">Neptune AI</h4>
+                <p class="mt-1 text-sm text-slate-400">Desktop AI assistant and data science workflows.</p>
+              </div>
+              <div class="timeline-item !pb-0">
+                <p class="mono mb-2 text-xs text-cyan-200">2025 — 2026</p>
+                <h4 class="font-bold">FinAgent Enterprise</h4>
+                <p class="mt-1 text-sm text-slate-400">Financial telemetry and predictive analytics platform.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass p-7 reveal">
+            <h3 class="mb-7 text-xl font-bold"><i class="fa-solid fa-award mr-3 text-violet-300"></i>Certifications & learning</h3>
+            <div class="space-y-4">
+              <div class="flex gap-4 rounded-xl border border-slate-800 bg-slate-950/45 p-4">
+                <div class="icon-box"><i class="fa-brands fa-python"></i></div>
+                <div><h4 class="font-bold">Python Professional Certificate</h4><p class="mt-1 text-sm text-slate-400">Anaconda · Completed</p></div>
+              </div>
+              <div class="flex gap-4 rounded-xl border border-slate-800 bg-slate-950/45 p-4">
+                <div class="icon-box"><i class="fa-solid fa-database"></i></div>
+                <div><h4 class="font-bold">SQL Certificate</h4><p class="mt-1 text-sm text-slate-400">LinkedIn Learning · Completed</p></div>
+              </div>
+              <div class="flex gap-4 rounded-xl border border-slate-800 bg-slate-950/45 p-4">
+                <div class="icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div><h4 class="font-bold">Prime 2.0 AI/ML Batch</h4><p class="mt-1 text-sm text-slate-400">Apna College · In progress</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profiles -->
+    <section id="profiles" class="section">
+      <div class="container-width">
+        <div class="section-heading reveal">
+          <span class="eyebrow">07 / ONLINE PROFILES</span>
+          <h2>Find me <span class="rgb-text">online</span></h2>
+          <p>Explore my repositories, coding practice, and professional profile.</p>
+        </div>
+        
+        <!-- Standard Links -->
+        <div class="grid gap-4 sm:grid-cols-2 mb-4">
+          <a href="https://github.com/Vaibhav242918" target="_blank" rel="noopener noreferrer" class="glass flex items-center gap-4 p-5 reveal">
+            <div class="icon-box"><i class="fa-brands fa-github text-xl"></i></div><div><h3 class="font-bold">GitHub</h3><p class="mt-1 text-xs text-slate-400">Projects and source code</p></div><i class="fa-solid fa-arrow-up-right-from-square ml-auto text-slate-500"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/vaibhav-waghole-0b2180341/" target="_blank" rel="noopener noreferrer" class="glass flex items-center gap-4 p-5 reveal">
+            <div class="icon-box"><i class="fa-brands fa-linkedin-in text-xl"></i></div><div><h3 class="font-bold">LinkedIn</h3><p class="mt-1 text-xs text-slate-400">Professional profile</p></div><i class="fa-solid fa-arrow-up-right-from-square ml-auto text-slate-500"></i>
+          </a>
+        </div>
+
+        <!-- Live Widget Data Cards -->
+        <div class="grid gap-4 sm:grid-cols-2">
+            <!-- LeetCode Live Card -->
+            <div class="glass p-6 reveal flex flex-col h-full">
+                <div class="flex items-center justify-between mb-5">
+                    <div class="flex items-center gap-4">
+                        <div class="icon-box !bg-amber-500/10 !text-amber-400 !border-amber-500/20"><i class="fa-solid fa-code text-xl"></i></div>
+                        <div><h3 class="font-bold">LeetCode Live</h3><p class="mt-1 text-xs text-slate-400">Real-time stats & streak</p></div>
+                    </div>
+                    <a href="https://leetcode.com/u/vaibhav_2429/" target="_blank" class="btn btn-secondary !px-3 !py-1.5 text-xs"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="mt-auto overflow-hidden rounded-xl border border-slate-800 bg-[#020617] p-2 flex-grow flex items-center">
+                    <img src="https://leetcard.jacoblin.cool/vaibhav_2429?theme=dark&font=Inter&ext=heatmap" alt="LeetCode Stats" class="w-full h-auto rounded-lg hover:scale-[1.02] transition duration-300">
+                </div>
+            </div>
+
+            <!-- HackerRank Verified Card -->
+            <div class="glass p-6 reveal flex flex-col h-full">
+                <div class="flex items-center justify-between mb-5">
+                    <div class="flex items-center gap-4">
+                        <div class="icon-box !bg-emerald-500/10 !text-emerald-400 !border-emerald-500/20"><i class="fa-brands fa-hackerrank text-xl"></i></div>
+                        <div><h3 class="font-bold">HackerRank</h3><p class="mt-1 text-xs text-slate-400">Verified Certifications</p></div>
+                    </div>
+                    <a href="https://www.hackerrank.com/profile/vaibhavwaghole21" target="_blank" class="btn btn-secondary !px-3 !py-1.5 text-xs"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="mt-auto flex flex-col items-center justify-center rounded-xl border border-slate-800 bg-[#020617] p-6 text-center flex-grow min-h-[160px]">
+                    <i class="fa-solid fa-award text-4xl text-emerald-400 mb-3 animate-pulse"></i>
+                    <h4 class="font-bold text-slate-200">Vaibhav Waghole</h4>
+                    <p class="text-xs text-slate-400 mt-1 mb-4">Python & SQL Certified</p>
+                    <a href="https://www.hackerrank.com/profile/vaibhavwaghole21" target="_blank" class="btn btn-secondary !px-4 !py-2 text-xs text-emerald-300 hover:text-emerald-200 !border-emerald-500/30">View Badges →</a>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section border-t border-slate-800/60 bg-slate-950/35">
+      <div class="container-width">
+        <div class="section-heading reveal">
+          <span class="eyebrow">08 / CONTACT</span>
+          <h2>Have an idea? Let's <span class="rgb-text">connect</span></h2>
+          <p>I'm open to discussing entry-level opportunities, collaborations, and interesting AI or data projects.</p>
+        </div>
+        <div class="grid gap-8 md:grid-cols-[.8fr_1.2fr]">
+          <div class="glass p-7 reveal">
+            <h3 class="mb-5 text-xl font-bold">Contact details</h3>
+            <a href="mailto:vaibhavwaghole2429@gmail.com" class="mb-5 flex items-start gap-3 text-sm text-slate-300 hover:text-cyan-200">
+              <i class="fa-solid fa-envelope mt-1 text-cyan-300"></i><span><span class="block font-semibold">Email</span><span class="mt-1 block text-slate-400">vaibhavwaghole2429@gmail.com</span></span>
+            </a>
+            <div class="mb-6 flex items-start gap-3 text-sm text-slate-300"><i class="fa-solid fa-location-dot mt-1 text-cyan-300"></i><span><span class="block font-semibold">Location</span><span class="mt-1 block text-slate-400">Chhatrapati Sambhajinagar, Maharashtra, India</span></span></div>
+            <div class="flex gap-3">
+              <a class="icon-box hover:border-cyan-300/50" href="https://github.com/Vaibhav242918" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a class="icon-box hover:border-cyan-300/50" href="https://www.linkedin.com/in/vaibhav-waghole-0b2180341/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a class="icon-box hover:border-cyan-300/50" href="mailto:vaibhavwaghole2429@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+          <form id="contactForm" class="glass space-y-4 p-7 reveal">
+            <div><label for="name" class="mb-2 block text-xs font-semibold text-slate-300">Your name</label><input class="input-field" id="name" name="name" type="text" placeholder="Enter your name" required></div>
+            <div><label for="email" class="mb-2 block text-xs font-semibold text-slate-300">Your email</label><input class="input-field" id="email" name="email" type="email" placeholder="you@example.com" required></div>
+            <div><label for="message" class="mb-2 block text-xs font-semibold text-slate-300">Message</label><textarea class="input-field" id="message" name="message" rows="4" placeholder="Tell me about your idea or opportunity..." required></textarea></div>
+            <button type="submit" class="btn btn-primary w-full">Compose Email <i class="fa-solid fa-paper-plane"></i></button>
+            <p class="text-xs leading-5 text-slate-500">This opens your default email app with your message prepared. It does not send or store the message on this website.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-7">
+    <div class="container-width flex flex-col items-center justify-between gap-3 text-center sm:flex-row sm:text-left">
+      <p class="text-xs text-slate-500">© <span id="year"></span> Vaibhav Waghole. Built with curiosity and code.</p>
+      <a href="#home" class="mono text-xs text-cyan-200 hover:text-white">BACK TO TOP ↑</a>
+      <p class="mono text-[10px] tracking-wider text-slate-600">THINK · ANALYZE · BUILD</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation
+    const menuButton = document.getElementById("menuButton");
+    const mobileLinks = document.getElementById("mobileLinks");
+
+    menuButton.addEventListener("click", () => {
+      const isOpen = mobileLinks.classList.toggle("open");
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.innerHTML = isOpen
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+    });
+
+    mobileLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileLinks.classList.remove("open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+      });
+    });
+
+    // Reveal elements when they enter the viewport
+    const revealItems = document.querySelectorAll(".reveal");
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      revealItems.forEach(item => observer.observe(item));
+    } else {
+      revealItems.forEach(item => item.classList.add("visible"));
+    }
+
+    // Contact form: create an email draft, no backend required
+    document.getElementById("contactForm").addEventListener("submit", event => {
+      event.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+      const subject = encodeURIComponent("Portfolio enquiry from " + name);
+      const body = encodeURIComponent(
+        "Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message
+      );
+      window.location.href =
+        "mailto:vaibhavwaghole2429@gmail.com?subject=" + subject + "&body=" + body;
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
