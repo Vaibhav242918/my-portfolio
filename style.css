@@ -603,3 +603,99 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .project-cover { height: 180px; }
   .container-width { width: min(1160px, calc(100% - 28px)); }
 }
+
+
+/* ============================================================
+   CYBER LIME × OBSIDIAN — dynamic esports / AI engineer theme
+   Appended overrides intentionally preserve the existing markup,
+   project links, LeetCode widget, navigation, and JavaScript.
+   ============================================================ */
+:root {
+  color-scheme: dark;
+  --bg: #080b09;
+  --panel: rgba(17, 26, 21, .86);
+  --panel-solid: #111a15;
+  --line: rgba(182, 255, 0, .17);
+  --text: #f5f7f2;
+  --muted: #b5c1b6;
+  --cyan: #b6ff00;
+  --blue: #00dfa2;
+  --purple: #e8fff0;
+  --pink: #8cff4a;
+  --green: #b6ff00;
+  --rgb: linear-gradient(110deg, #b6ff00 0%, #f5fff0 28%, #00dfa2 55%, #a2ff3f 78%, #b6ff00 100%);
+}
+body { background: #080b09; color: #f5f7f2; }
+body::before {
+  background:
+    radial-gradient(ellipse at 12% 18%, rgba(182,255,0,.15), transparent 34%),
+    radial-gradient(ellipse at 85% 24%, rgba(0,223,162,.10), transparent 32%),
+    radial-gradient(ellipse at 52% 86%, rgba(140,255,74,.08), transparent 35%);
+  animation: cyberAmbient 18s ease-in-out infinite alternate;
+}
+body::after {
+  background-image: linear-gradient(rgba(182,255,0,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(182,255,0,.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(to bottom, black, rgba(0,0,0,.65) 58%, transparent 100%);
+}
+@keyframes cyberAmbient { 0% { transform: translate3d(-1%,0,0) scale(1); } 100% { transform: translate3d(1%,1.2%,0) scale(1.04); } }
+@keyframes limePulse { 0%,100% { box-shadow: 0 0 0 1px rgba(182,255,0,.05), 0 0 14px rgba(182,255,0,.06); } 50% { box-shadow: 0 0 0 1px rgba(182,255,0,.13), 0 0 24px rgba(182,255,0,.14); } }
+@keyframes borderSweep { 0% { background-position: 0% 50%; } 100% { background-position: 200% 50%; } }
+.rgb-text { background-image: linear-gradient(100deg,#b6ff00,#f5fff0 34%,#00dfa2 62%,#b6ff00); background-size: 240% 100%; animation: borderSweep 7s linear infinite; }
+header { border-bottom-color: rgba(182,255,0,.14) !important; background: rgba(8,11,9,.84) !important; box-shadow: 0 8px 30px rgba(0,0,0,.16); }
+.eyebrow { color: #dfff9a; border-color: rgba(182,255,0,.34); background: rgba(182,255,0,.07); }
+.status-dot { background: #b6ff00; box-shadow: 0 0 12px rgba(182,255,0,.75); }
+.glass { background: linear-gradient(145deg,rgba(20,30,23,.92),rgba(12,17,14,.92)); border-color: rgba(182,255,0,.13); box-shadow: 0 16px 48px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.025); backdrop-filter: blur(16px); }
+.glass:hover { border-color: rgba(182,255,0,.55); box-shadow: 0 0 0 1px rgba(182,255,0,.06),0 18px 48px rgba(0,0,0,.35),0 0 28px rgba(182,255,0,.11); transform: translateY(-4px); }
+.btn { border-radius: 10px; transition: transform .22s ease,box-shadow .22s ease,border-color .22s ease,filter .22s ease; }
+.btn:hover { transform: translateY(-2px); }
+.btn-primary { color: #10150b; background: linear-gradient(110deg,#b6ff00,#dfff91 48%,#00dfa2); background-size: 200% 100%; animation: borderSweep 8s linear infinite; box-shadow: 0 5px 22px rgba(182,255,0,.16); font-weight: 800; }
+.btn-primary:hover { box-shadow: 0 7px 30px rgba(182,255,0,.28); filter: saturate(1.12); }
+.btn-secondary { color: #f5f7f2; border-color: rgba(182,255,0,.20); background: rgba(17,26,21,.82); }
+.btn-secondary:hover { border-color: rgba(182,255,0,.58); box-shadow: 0 0 20px rgba(182,255,0,.09); }
+.icon-box { color: #c8ff4d; background: linear-gradient(145deg,rgba(182,255,0,.12),rgba(0,223,162,.035)); border-color: rgba(182,255,0,.25); border-radius: 13px; }
+.tag { background: rgba(27,39,30,.78); border-color: rgba(182,255,0,.15); color: #e5f2df; }
+.hero-visual { border-color: rgba(182,255,0,.26); background: radial-gradient(circle at 50% 46%,rgba(182,255,0,.13),transparent 58%),linear-gradient(145deg,rgba(19,31,21,.94),rgba(8,11,9,.97)); animation: limePulse 6s ease-in-out infinite; }
+.planet { background: radial-gradient(circle at 30% 25%,#f5fff0 0%,#dfff91 18%,#b6ff00 42%,#4f7b00 70%,#152300 92%); box-shadow: 0 0 54px rgba(182,255,0,.22),inset -18px -20px 35px rgba(2,5,2,.62); }
+.planet::before { border-color: rgba(223,255,145,.8); box-shadow: 0 0 18px rgba(182,255,0,.24); }
+.orbit { border-color: rgba(182,255,0,.20); }
+.orbit::after { background: #b6ff00; box-shadow: 0 0 13px #b6ff00; }
+.visual-chip { border-color: rgba(182,255,0,.20); background: rgba(10,17,12,.94); box-shadow: 0 8px 24px rgba(0,0,0,.22); }
+.project-cover { background-color: #101711; border-bottom-color: rgba(182,255,0,.24); }
+.project-cover::before { background: linear-gradient(115deg,transparent 0 58%,rgba(255,255,255,.05) 58% 58.3%,transparent 58.3%),radial-gradient(ellipse at 90% 25%,rgba(182,255,0,.14),transparent 38%); }
+.finagent-cover { background: linear-gradient(120deg,#172711 0%,#102017 52%,#0c100d 100%); }
+.finagent-cover::before { background: linear-gradient(115deg,transparent 0 58%,rgba(255,255,255,.05) 58% 58.3%,transparent 58.3%),radial-gradient(ellipse at 90% 25%,rgba(182,255,0,.20),transparent 38%); }
+.neptune-cover { background: linear-gradient(120deg,#102b23 0%,#14221a 48%,#0b100d 100%); }
+.neptune-cover::before { background: linear-gradient(115deg,transparent 0 58%,rgba(255,255,255,.055) 58% 58.3%,transparent 58.3%),radial-gradient(ellipse at 90% 25%,rgba(0,223,162,.16),transparent 38%); }
+.cover-icon { border-color: rgba(182,255,0,.30); background: rgba(8,14,9,.8); color: #d3ff73; box-shadow: 0 0 26px rgba(182,255,0,.09),inset 0 1px 0 rgba(255,255,255,.05); }
+.neptune-cover .cover-icon { color: #a5ffe3; border-color: rgba(0,223,162,.28); }
+.cover-copy > span { color: #dfff9a; }
+.neptune-cover .cover-copy > span { color: #a5ffe3; }
+.cover-copy em { color: #b6ff00; }
+.neptune-cover .cover-copy em { color: #00dfa2; }
+.cover-mini-chart span { background: linear-gradient(to top,#4d7b00,#b6ff00); }
+.neptune-orbit { border-color: rgba(0,223,162,.24); }
+.orbit-two { border-color: rgba(182,255,0,.23); }
+.project-body { background: linear-gradient(180deg,rgba(20,30,23,.35),rgba(8,11,9,.18)); }
+.project-body ul { color: #d6dfd5; }
+.timeline-line { border-left-color: rgba(182,255,0,.34); }
+.timeline-item::before { background: #b6ff00; box-shadow: 0 0 12px rgba(182,255,0,.55); }
+.input-field { background: rgba(8,14,9,.92); border-color: rgba(182,255,0,.2); color: #f5f7f2; }
+.input-field:focus { border-color: rgba(182,255,0,.85); box-shadow: 0 0 0 3px rgba(182,255,0,.12); outline: none; }
+.nav-link { color: #d5ded4; }
+.nav-link:hover,.nav-link.active { color: #caff55; }
+/* Map existing cyan utility accents to lime/teal without editing the content markup. */
+.text-cyan-300,.text-cyan-200,.text-cyan-100 { color: #caff55 !important; }
+.text-cyan-300\/80,.text-cyan-200\/80,.text-cyan-100\/80 { color: #dfff9a !important; }
+.border-cyan-300\/20 { border-color: rgba(182,255,0,.28) !important; }
+.bg-cyan-300\/10 { background-color: rgba(182,255,0,.10) !important; }
+.hover\:text-cyan-200:hover { color: #dfff9a !important; }
+.text-violet-500 { color: #00dfa2 !important; }
+.selection\:bg-lime-400 ::selection { background: #b6ff00; color: #080b09; }
+.mobile-menu { border-color: rgba(182,255,0,.22) !important; }
+.mobile-menu:hover { border-color: rgba(182,255,0,.65) !important; color: #caff55 !important; }
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,[tabindex]:focus-visible { outline: 2px solid #caff55; outline-offset: 4px; }
+@media (hover:hover) { .project-card:hover .project-cover { filter: saturate(1.12); } }
+@media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
+@media (max-width: 850px) { .desktop-nav { gap: 12px; } }
+@media (max-width: 560px) { .project-cover { height: 180px; } .container-width { width: min(1160px,calc(100% - 28px)); } }
